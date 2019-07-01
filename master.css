@@ -1,0 +1,47 @@
+body{
+  background: #c0c0c0;
+  margin-top:10%;
+}
+.box-biglietto{
+  display: flex;
+  width:80%;
+  margin:auto;
+  background: white;
+  border-radius:30px;
+}
+.box-flex-in{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:calc(100% / 3);
+  height:100%;
+}
+.left img{
+  margin-top:20px;
+  margin-bottom:120px;
+  margin-left:10px;
+}
+.left p{
+  margin-left:10px;
+  background-color:orange;
+}
+
+.kilome{
+  display: flex;
+  flex-direction: row;
+  margin-top:100px;
+}
+.info{
+  display:flex;
+  flex-direction:row;
+}
+.prezzo{
+  border:1px solid black;
+  margin-top:50px;
+}
+.prezzo p{
+  font-size: 16px;
+  font-weight:900;
+  line-height:10px;
+  padding:0 10px;
+}
