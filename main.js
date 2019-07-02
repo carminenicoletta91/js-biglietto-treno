@@ -28,19 +28,20 @@ prezzoakm = 0.21;
 /*calcolo il prezzo del biglietto facendo attenzione
  all'età dell'utente..Si applica uno sconto del 20%
  per i minorenni e uno sconto del 40% per gli over 65..*/
-var   prezzo,sconto;
+var   prezzo,sconto,n;
 prezzo = km * prezzoakm;
 
 if ( eta <= 17 ) {
   sconto= ( prezzo * 20 ) / 100 ;
   prezzo= prezzo - sconto;
+
 }
 else if (eta > 65 )  {
   sconto= (prezzo * 40) / 100;
   prezzo= prezzo - sconto;
-  
+
 }
-console.log(prezzo);
-document.getElementById('prezzo-biglietto').innerHTML= prezzo + "€";
+n=prezzo.toFixed(2);
+document.getElementById('prezzo-biglietto').innerHTML= n + "€";
 
 alert("Ci scusiamo per il sicuro ritardo che farà il treno...");
