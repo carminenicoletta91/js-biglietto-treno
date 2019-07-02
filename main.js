@@ -10,25 +10,25 @@ cognome = prompt("Inserisci il tuo cognome");
 console.log(cognome);
 document.getElementById('il-mio-cognome').innerHTML= cognome;
 
-var eta;
-eta = prompt("Inserisci la tua età");
+var  eta;
+eta = parseInt(prompt("Inserisci la tua età"));
 console.log(eta);
 document.getElementById('età').innerHTML= eta;
 
 // voglio sapere quanti km vuole percorrere
-var km;
-km = prompt("Inserisci quanti km vuoi percorrere");
+var  km;
+km = parseInt(prompt("Inserisci quanti km vuoi percorrere"));
 console.log(km);
 document.getElementById('km-da-percorrere').innerHTML= "[" + km + "]";
 
 //definisco prezzo standard al km
-var prezzoakm;
+var  prezzoakm;
 prezzoakm = 0.21;
 
 /*calcolo il prezzo del biglietto facendo attenzione
  all'età dell'utente..Si applica uno sconto del 20%
  per i minorenni e uno sconto del 40% per gli over 65..*/
-var prezzo,sconto;
+var   prezzo,sconto;
 prezzo = km * prezzoakm;
 
 if ( eta <= 17 ) {
@@ -38,6 +38,7 @@ if ( eta <= 17 ) {
 else if (eta > 65 )  {
   sconto= (prezzo * 40) / 100;
   prezzo= prezzo - sconto;
+  
 }
 console.log(prezzo);
 document.getElementById('prezzo-biglietto').innerHTML= prezzo + "€";
